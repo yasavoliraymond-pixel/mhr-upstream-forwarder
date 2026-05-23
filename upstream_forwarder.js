@@ -22,8 +22,8 @@
 const http = require("http");
 
 const AUTH_KEY = process.env.AUTH_KEY || "";
-const PORT = parseInt(process.env.PORT, 10) || 8787;
-const HOST = process.env.HOST || "127.0.0.1";
+const PORT = parseInt(process.env.PORT, 10) || 10000;
+const HOST = process.env.HOST || "0.0.0.0";
 
 if (!AUTH_KEY || AUTH_KEY.length < 32) {
     console.error("FATAL: AUTH_KEY env var missing or shorter than 32 chars.");
